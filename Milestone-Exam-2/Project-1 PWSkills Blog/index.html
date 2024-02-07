@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/846a5b7040.js" crossorigin="anonymous"></script>
+    <title>PWSkills Blog</title>
+</head>
+<body>
+    <nav>
+        <h1>PWSkills Blog</h1>
+        <div>
+            <button id="create-blog"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </nav>
+    <main>
+        <section class="blogs">
+            <div class="blog">
+                <div class="img-cont">
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" alt="">
+                </div>
+                <h4>Blog Title: Demo Article</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur id assumenda ipsa officiis, dolore veniam ex, recusandae
+                    eveniet, obcaecati quam!
+                </p>
+                <a href="./blogPost/blog.html">Read</a>
+            </div>
+            <div class="blog">
+                <div class="img-cont">
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+                        alt="">
+                </div>
+                <h4>Blog Title: Demo Article</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur id assumenda ipsa officiis, dolore veniam ex, recusandae
+                    eveniet, obcaecati quam!
+                </p>
+                <a href="./blogPost/blog.html">Read</a>
+            </div>
+            <div class="blog">
+                <div class="img-cont">
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+                        alt="">
+                </div>
+                <h4>Blog Title: Demo Article</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur id assumenda ipsa officiis, dolore veniam ex, recusandae
+                    eveniet, obcaecati quam!
+                </p>
+                <a href="./blogPost/blog.html" onclick="localStorage.setItem('postIndex', JSON.parse(index))">Read</a>
+            </div>
+        </section>
+        <div class="modal-container">
+            <div class="modal">
+                <span><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <div class="input">
+                        <input type="text" required placeholder="Enter Blog Post Url :" name="url" id="url">
+                    </div>
+                    <div class="input">
+                        <input type="text" required placeholder="Enter Blog Title :" name="title" id="title">
+                    </div>
+                    <div class="input">
+                        <input type="text" required placeholder="Enter Blog description :" name="description" id="description">
+                    </div>
+                    <div class="textarea">
+                        <textarea required placeholder="Write" name="post" id="post" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+                <button id="add-blog">Add Blog</button>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
